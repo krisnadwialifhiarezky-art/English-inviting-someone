@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Adventure — Inviting Someone</title>
+<style>
+:root{--navy:#172554;--blue:#2563eb;--sky:#dbeafe;--yellow:#facc15;--pink:#fce7f3;--mint:#d1fae5;--ink:#18233d;--muted:#64748b;--paper:#fff;--line:#e5eaf4;--purple:#7c3aed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#f5f7ff;line-height:1.6}
+button{font:inherit;cursor:pointer}.topbar{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{max-width:1120px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:900;letter-spacing:-.5px;color:var(--navy);display:flex;align-items:center;gap:9px}.brand-mark{display:grid;place-items:center;background:var(--yellow);width:38px;height:38px;border-radius:13px;font-size:22px}.navlinks{display:flex;gap:8px;flex-wrap:wrap}.navlinks a{color:#334155;text-decoration:none;font-weight:700;font-size:.88rem;padding:8px 11px;border-radius:999px}.navlinks a:hover{background:var(--sky)}
+main{max-width:1120px;margin:auto;padding:22px 20px 60px}.hero{position:relative;overflow:hidden;border-radius:30px;background:linear-gradient(120deg,#172554,#1d4ed8 65%,#7c3aed);color:white;padding:clamp(28px,6vw,64px);display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;box-shadow:0 18px 45px #1e3a8a24}.hero:after{content:"";position:absolute;width:300px;height:300px;border:45px solid #ffffff10;border-radius:50%;right:-70px;top:-90px}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:#ffffff1c;border:1px solid #ffffff40;padding:6px 12px;border-radius:999px;font-weight:800;font-size:.82rem}.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.02;letter-spacing:-2px;margin:18px 0 12px}.hero p{color:#dbeafe;font-size:1.08rem;max-width:570px}.hero-art{position:relative;z-index:1;display:grid;place-items:center;min-height:220px}.big-emoji{font-size:clamp(7rem,15vw,12rem);filter:drop-shadow(0 14px 8px #11182730);animation:bob 3s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-10px) rotate(2deg)}}.float-note{position:absolute;background:white;color:var(--navy);padding:10px 14px;border-radius:15px;box-shadow:0 8px 25px #11182722;font-weight:900}.note-one{top:10%;left:0;transform:rotate(-7deg)}.note-two{bottom:8%;right:0;transform:rotate(5deg)}.primary,.secondary{border:0;border-radius:14px;padding:12px 18px;font-weight:900;transition:.2s}.primary{background:var(--yellow);color:#172554;box-shadow:0 5px 0 #d4a900}.primary:hover{transform:translateY(-2px)}.secondary{background:var(--sky);color:var(--navy)}.hero .primary{margin-top:12px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 34px}.stat{background:white;border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;gap:12px;align-items:center}.stat-icon{font-size:1.8rem}.stat strong{display:block;font-size:1.05rem}.stat small{color:var(--muted)}
+.section{margin-top:42px;scroll-margin-top:90px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}.section-head h2{font-size:clamp(1.6rem,3vw,2.25rem);letter-spacing:-.8px;margin:0;color:var(--navy)}.section-head p{margin:4px 0 0;color:var(--muted)}.pill{font-size:.78rem;font-weight:900;background:#ede9fe;color:#5b21b6;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.card{background:white;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 24px #1e293b06}.definition{display:grid;grid-template-columns:1fr 1fr;gap:16px}.language{padding:20px;border-radius:18px}.language.en{background:#eff6ff;border:1px solid #bfdbfe}.language.id{background:#fff7ed;border:1px solid #fed7aa}.language h3{margin:0 0 8px;display:flex;gap:8px;align-items:center}.language p{margin:0}.translation{color:#475569;font-size:.95rem;margin-top:8px!important}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.expression{border:1px solid var(--line);border-radius:20px;padding:19px;background:white;transition:.2s}.expression:hover{transform:translateY(-3px);box-shadow:0 12px 24px #1e293b0d}.expression .emoji{font-size:2rem}.expression h3{margin:8px 0 5px;font-size:1.1rem}.phrase{font-size:1.05rem;font-weight:850;color:var(--navy)}.meaning{color:#64748b;margin:4px 0 0}.tag{display:inline-block;margin-top:12px;border-radius:8px;padding:4px 8px;background:#f1f5f9;font-size:.76rem;font-weight:800;color:#475569}
+.rule-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.rule{padding:20px;border-radius:20px;background:#fff;border:1px solid var(--line);position:relative;overflow:hidden}.rule-number{font-weight:950;font-size:.8rem;color:var(--purple);letter-spacing:1px}.formula{font-size:1.18rem;font-weight:950;color:var(--navy);margin:8px 0}.example{background:#f8fafc;border-radius:12px;padding:12px;margin-top:10px}.correct{color:#047857;font-weight:900}.wrong{color:#b91c1c}.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}.compare>div{border-radius:16px;padding:16px}.compare .green{background:#ecfdf5;border:1px solid #a7f3d0}.compare .rose{background:#fff1f2;border:1px solid #fecdd3}.compare h4{margin:0 0 8px}
+.dialogue{display:grid;grid-template-columns:90px 1fr;gap:18px;align-items:start}.dialogue-art{font-size:4rem;background:#fef3c7;border-radius:20px;min-height:100px;display:grid;place-items:center}.chat{display:grid;gap:10px}.bubble{padding:12px 15px;border-radius:15px;max-width:95%}.bubble.a{background:#dbeafe;border-top-left-radius:4px;justify-self:start}.bubble.b{background:#dcfce7;border-top-right-radius:4px;justify-self:end}.bubble em{display:block;color:#475569;font-style:normal;font-size:.9rem;margin-top:3px}.speaker{font-size:.75rem;font-weight:950;letter-spacing:.5px;color:#475569}
+.vocab{width:100%;border-collapse:collapse;border-radius:15px;overflow:hidden}.vocab th{background:var(--navy);color:white;text-align:left;padding:13px}.vocab td{padding:12px 13px;border-bottom:1px solid var(--line)}.vocab tr:nth-child(even) td{background:#f8fafc}.vocab td:first-child{font-weight:850;color:var(--navy)}
+.quiz-wrap{display:grid;grid-template-columns:250px 1fr;gap:18px;align-items:start}.quiz-side{background:var(--navy);color:white;border-radius:22px;padding:22px;position:sticky;top:86px}.quiz-side h3{margin:0;font-size:1.4rem}.quiz-side p{color:#cbd5e1;font-size:.9rem}.progress{height:9px;background:#ffffff2b;border-radius:99px;overflow:hidden;margin:14px 0}.progress-bar{height:100%;width:0;background:var(--yellow);transition:width .25s}.quiz-main{background:white;border:1px solid var(--line);border-radius:22px;padding:clamp(18px,4vw,30px)}.qtop{display:flex;justify-content:space-between;gap:10px;align-items:center;color:var(--muted);font-size:.85rem;font-weight:800}.qtop span{background:#f1f5f9;border-radius:999px;padding:6px 10px}.question{font-size:1.25rem;font-weight:900;color:var(--navy);margin:20px 0}.options{display:grid;gap:10px}.option{width:100%;text-align:left;border:2px solid var(--line);background:white;padding:13px 15px;border-radius:14px;font-weight:750;color:#334155;display:flex;gap:12px;align-items:center}.option .letter{display:grid;place-items:center;width:29px;height:29px;border-radius:9px;background:#f1f5f9;font-weight:950;flex-shrink:0}.option:hover{border-color:#93c5fd;background:#f8fbff}.option.selected{border-color:var(--blue);background:#eff6ff}.option.right{border-color:#10b981;background:#ecfdf5}.option.incorrect{border-color:#fb7185;background:#fff1f2}.feedback{margin-top:14px;padding:12px 14px;border-radius:12px;display:none}.feedback.show{display:block}.feedback.good{background:#d1fae5;color:#065f46}.feedback.bad{background:#ffe4e6;color:#9f1239}.quiz-actions{display:flex;justify-content:space-between;gap:10px;margin-top:20px}.quiz-actions button:disabled{opacity:.45;cursor:not-allowed}.result{display:none;text-align:center;padding:18px}.result.show{display:block}.result-score{font-size:4rem;font-weight:1000;color:var(--blue);line-height:1.2}.result-emoji{font-size:4rem}.footer{text-align:center;padding:32px 12px;color:#64748b}.footer strong{color:var(--navy)}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero-art{min-height:170px}.big-emoji{font-size:8rem}.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:3px}.navlinks a{font-size:.78rem;padding:7px}.stats{grid-template-columns:1fr}.definition,.grid2,.rule-grid,.compare{grid-template-columns:1fr}.quiz-wrap{grid-template-columns:1fr}.quiz-side{position:static}.dialogue{grid-template-columns:1fr}.dialogue-art{min-height:75px;font-size:3rem}.section-head{align-items:start;flex-direction:column}.vocab{font-size:.9rem}.vocab td,.vocab th{padding:9px}}
+</style>
+</head>
+<body>
+<header class="topbar"><nav class="nav">
+  <div class="brand"><span class="brand-mark">✉️</span> English Adventure <span style="font-size:.72rem;color:#64748b">GRADE 7</span></div>
+  <div class="navlinks"><a href="#lesson">Materi</a><a href="#grammar">Grammar</a><a href="#dialogue">Dialog</a><a href="#vocabulary">Kosakata</a><a href="#quiz">Kuis 🎯</a></div>
+</nav></header>
+<main>
+<section class="hero">
+  <div>
+    <span class="eyebrow">🌟 ENGLISH • BAHASA INGGRIS KELAS 7</span>
+    <h1>Inviting<br>Someone!</h1>
+    <p>Belajar cara mengundang teman, menerima undangan, dan menolak dengan sopan. Yuk, belajar sambil bermain!</p>
+    <a href="#lesson"><button class="primary">Mulai Belajar ✨</button></a>
+  </div>
+  <div class="hero-art"><div class="float-note note-one">Would you like to come? 💌</div><div class="big-emoji">🎉</div><div class="float-note note-two">Yes, I'd love to! 💛</div></div>
+</section>
+<div class="stats">
+  <div class="stat"><div class="stat-icon">📚</div><div><strong>Materi bilingual</strong><small>English + Bahasa Indonesia</small></div></div>
+  <div class="stat"><div class="stat-icon">💬</div><div><strong>Contoh percakapan</strong><small>Situasi sehari-hari</small></div></div>
+  <div class="stat"><div class="stat-icon">🏆</div><div><strong>Kuis interaktif</strong><small>10 soal dengan skor</small></div></div>
+</div>
+
+<section class="section" id="lesson">
+ <div class="section-head"><div><h2>📖 1. What is Inviting Someone?</h2><p>Apa itu mengundang seseorang?</p></div><span class="pill">LET'S LEARN</span></div>
+ <div class="definition">
+  <div class="language en"><h3>🇬🇧 Definition</h3><p><b>Inviting someone</b> is an expression used to ask or invite someone to do an activity, attend an event, or go to a place together.</p></div>
+  <div class="language id"><h3>🇮🇩 Pengertian</h3><p><b>Inviting someone</b> adalah ungkapan untuk mengajak seseorang melakukan kegiatan, menghadiri acara, atau pergi ke suatu tempat bersama.</p></div>
+ </div>
+ <div class="section-head" style="margin-top:25px"><div><h2>💌 Expressions of Invitation</h2><p>Ungkapan untuk mengundang atau mengajak seseorang.</p></div></div>
+ <div class="grid2">
+  <article class="expression"><div class="emoji">🎂</div><h3>Birthday Party</h3><div class="phrase">“Would you like to come to my birthday party?”</div><p class="meaning">Maukah kamu datang ke pesta ulang tahunku?</p><span class="tag">POLITE INVITATION · UNDANGAN SOPAN</span></article>
+  <article class="expression"><div class="emoji">📚</div><h3>Study Together</h3><div class="phrase">“Do you want to study together?”</div><p class="meaning">Apakah kamu ingin belajar bersama?</p><span class="tag">ASKING · MENGAJAK</span></article>
+  <article class="expression"><div class="emoji">🏸</div><h3>Playing Badminton</h3><div class="phrase">“Let's play badminton!”</div><p class="meaning">Ayo bermain bulu tangkis!</p><span class="tag">SUGGESTION · AJAKAN</span></article>
+  <article class="expression"><div class="emoji">🎬</div><h3>Watching a Movie</h3><div class="phrase">“How about watching a movie?”</div><p class="meaning">Bagaimana kalau menonton film?</p><span class="tag">SUGGESTION · USULAN</span></article>
+ </div>
+ <div class="section-head" style="margin-top:30px"><div><h2>😊 2. Accepting an Invitation</h2><p>Menerima undangan dengan senang dan sopan.</p></div></div>
+ <div class="grid2">
+  <article class="expression"><div class="phrase">“Yes, I'd love to!”</div><p class="meaning">Ya, aku mau sekali!</p></article>
+  <article class="expression"><div class="phrase">“Sure!” / “Of course!”</div><p class="meaning">Tentu! / Tentu saja!</p></article>
+  <article class="expression"><div class="phrase">“That sounds great!”</div><p class="meaning">Kedengarannya menyenangkan!</p></article>
+  <article class="expression"><div class="phrase">“Thank you for inviting me.”</div><p class="meaning">Terima kasih sudah mengundangku.</p></article>
+ </div>
+ <div class="section-head" style="margin-top:30px"><div><h2>🙏 3. Declining an Invitation</h2><p>Menolak undangan secara sopan.</p></div></div>
+ <div class="grid2">
+  <article class="expression"><div class="phrase">“Sorry, I can't.”</div><p class="meaning">Maaf, aku tidak bisa.</p></article>
+  <article class="expression"><div class="phrase">“I'd love to, but I can't.”</div><p class="meaning">Aku sebenarnya mau, tetapi tidak bisa.</p></article>
+  <article class="expression"><div class="phrase">“Thank you, but I'm busy.”</div><p class="meaning">Terima kasih, tetapi aku sibuk.</p></article>
+  <article class="expression"><div class="phrase">“Maybe next time.”</div><p class="meaning">Mungkin lain kali.</p></article>
+ </div>
+ <div class="compare">
+  <div class="green"><h4>✅ Accepting — Menerima</h4><b>“Would you like to study together?”</b><br>“Sure! That sounds great!”<p class="meaning">“Mau belajar bersama?” — “Tentu! Kedengarannya menyenangkan!”</p></div>
+  <div class="rose"><h4>💗 Declining politely — Menolak sopan</h4><b>“Would you like to play badminton?”</b><br>“Sorry, I can't. I have to study.”<p class="meaning">“Mau bermain bulu tangkis?” — “Maaf, aku tidak bisa. Aku harus belajar.”</p></div>
+ </div>
+</section>
+
+<section class="section" id="grammar">
+ <div class="section-head"><div><h2>🧠 4. Grammar Corner</h2><p>Pahami pola kalimat dan aturan kata kerjanya.</p></div><span class="pill">REMEMBER THIS!</span></div>
+ <div class="rule-grid">
+  <article class="rule"><div class="rule-number">PATTERN 01</div><div class="formula">Would you like to + Verb 1 ...?</div><p>Digunakan untuk mengundang dengan sopan.</p><div class="example"><b>Would you like to <u>go</u> to the park?</b><br><span class="meaning">Maukah kamu pergi ke taman?</span></div></article>
+  <article class="rule"><div class="rule-number">PATTERN 02</div><div class="formula">Do you want to + Verb 1 ...?</div><p>Menanyakan apakah seseorang ingin melakukan sesuatu.</p><div class="example"><b>Do you want to <u>play</u> football?</b><br><span class="meaning">Apakah kamu ingin bermain sepak bola?</span></div></article>
+  <article class="rule"><div class="rule-number">PATTERN 03</div><div class="formula">Let's + Verb 1 ...!</div><p>Digunakan untuk mengajak seseorang melakukan kegiatan bersama.</p><div class="example"><b>Let's <u>study</u> together!</b><br><span class="meaning">Ayo belajar bersama!</span></div></article>
+  <article class="rule"><div class="rule-number">PATTERN 04</div><div class="formula">How about + Verb-ing ...?</div><p>Digunakan untuk memberikan usulan kegiatan.</p><div class="example"><b>How about <u>watching</u> a movie?</b><br><span class="meaning">Bagaimana kalau menonton film?</span></div></article>
+ </div>
+ <div class="card" style="margin-top:16px">
+  <h3 style="margin-top:0">⭐ Grammar tip — Tips tata bahasa</h3>
+  <p>Setelah <b>would like to</b> dan <b>want to</b>, gunakan kata kerja bentuk pertama (<b>Verb 1</b>), misalnya <i>go, play, study</i>.</p>
+  <p>Setelah <b>Let's</b>, gunakan Verb 1 juga: <i>Let's play!</i> = Ayo bermain!</p>
+  <p>Setelah <b>How about</b>, gunakan kata kerja berakhiran <b>-ing</b>, misalnya <i>going, playing, studying</i>.</p>
+  <div class="compare"><div class="green"><h4>✅ Correct — Benar</h4><span class="correct">Would you like to play?</span><br><span class="correct">How about playing?</span></div><div class="rose"><h4>❌ Incorrect — Salah</h4><span class="wrong">Would you like to playing?</span><br><span class="wrong">How about play?</span></div></div>
+ </div>
+</section>
+
+<section class="section" id="dialogue">
+ <div class="section-head"><div><h2>🗣️ 5. Let's Read a Dialogue</h2><p>Baca percakapan dan perhatikan arti setiap kalimat.</p></div></div>
+ <div class="card dialogue">
+  <div class="dialogue-art">🎂</div>
+  <div class="chat">
+   <div class="bubble a"><span class="speaker">NINA</span><br>Hi, Rani! Would you like to come to my birthday party on Sunday?<em>Hai, Rani! Maukah kamu datang ke pesta ulang tahunku pada hari Minggu?</em></div>
+   <div class="bubble b"><span class="speaker">RANI</span><br>Yes, I'd love to!<em>Ya, aku mau sekali!</em></div>
+   <div class="bubble a"><span class="speaker">NINA</span><br>Great! The party starts at 4 p.m.<em>Bagus! Pestanya dimulai pukul 4 sore.</em></div>
+   <div class="bubble b"><span class="speaker">RANI</span><br>Thank you for inviting me.<em>Terima kasih sudah mengundangku.</em></div>
+  </div>
+ </div>
+ <div class="card dialogue" style="margin-top:15px">
+  <div class="dialogue-art" style="background:#dbeafe">📚</div>
+  <div class="chat">
+   <div class="bubble a"><span class="speaker">DINA</span><br>Do you want to study English together this afternoon?<em>Apakah kamu ingin belajar bahasa Inggris bersama sore ini?</em></div>
+   <div class="bubble b"><span class="speaker">SITI</span><br>Sorry, I can't. I have to help my mother.<em>Maaf, aku tidak bisa. Aku harus membantu ibuku.</em></div>
+   <div class="bubble a"><span class="speaker">DINA</span><br>That's okay. Maybe next time.<em>Tidak apa-apa. Mungkin lain kali.</em></div>
+   <div class="bubble b"><span class="speaker">SITI</span><br>Thank you for understanding.<em>Terima kasih sudah mengerti.</em></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="vocabulary">
+ <div class="section-head"><div><h2>📚 6. Vocabulary Bank</h2><p>Kosakata penting beserta arti Bahasa Indonesianya.</p></div><span class="pill">BUILD YOUR WORDS</span></div>
+ <div class="card" style="padding:0;overflow:hidden"><table class="vocab"><thead><tr><th>English</th><th>Bahasa Indonesia</th><th>English</th><th>Bahasa Indonesia</th></tr></thead><tbody>
+ <tr><td>Invite</td><td>Mengundang</td><td>Invitation</td><td>Undangan</td></tr>
+ <tr><td>Friend</td><td>Teman</td><td>Guest</td><td>Tamu</td></tr>
+ <tr><td>Birthday party</td><td>Pesta ulang tahun</td><td>Attend</td><td>Menghadiri</td></tr>
+ <tr><td>Come</td><td>Datang</td><td>Join</td><td>Ikut / bergabung</td></tr>
+ <tr><td>Together</td><td>Bersama</td><td>Busy</td><td>Sibuk</td></tr>
+ <tr><td>Available</td><td>Senggang / tersedia</td><td>Tomorrow</td><td>Besok</td></tr>
+ <tr><td>This afternoon</td><td>Sore ini</td><td>Maybe</td><td>Mungkin</td></tr>
+ <tr><td>Next time</td><td>Lain kali</td><td>Thank you</td><td>Terima kasih</td></tr>
+ </tbody></table></div>
+</section>
+
+<section class="section" id="quiz">
+ <div class="section-head"><div><h2>🎯 7. Challenge Yourself!</h2><p>Jawab 10 pertanyaan untuk menguji pemahamanmu.</p></div><span class="pill">QUIZ TIME</span></div>
+ <div class="quiz-wrap">
+  <aside class="quiz-side"><div style="font-size:2rem">🏆</div><h3>Mini Quiz</h3><p>Pilih jawaban yang paling tepat. Setiap soal bernilai 10 poin.</p><div style="display:flex;justify-content:space-between;font-weight:800;font-size:.85rem"><span>Progress</span><span id="progressText">0 / 10</span></div><div class="progress"><div class="progress-bar" id="progressBar"></div></div><div style="font-size:.88rem;color:#dbeafe">💡 Tip: baca kalimat dan artinya dengan teliti!</div></aside>
+  <div class="quiz-main">
+   <div id="quizContent">
+    <div class="qtop"><span id="qNumber">QUESTION 1 OF 10</span><span id="points">10 POINTS</span></div>
+    <div class="question" id="questionText"></div>
+    <div class="options" id="options"></div>
+    <div class="feedback" id="feedback"></div>
+    <div class="quiz-actions"><button class="secondary" id="restartBtn" onclick="restartQuiz()">↻ Ulangi</button><button class="primary" id="nextBtn" onclick="nextQuestion()" disabled>Berikutnya →</button></div>
+   </div>
+   <div class="result" id="result"><div class="result-emoji" id="resultEmoji">🎉</div><h2 id="resultTitle">Quiz completed!</h2><div class="result-score" id="finalScore">0/100</div><p id="resultMessage"></p><button class="primary" onclick="restartQuiz()">Main Lagi ↻</button></div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="section-head"><div><h2>🎤 8. Speaking Challenge</h2><p>Praktikkan bersama temanmu!</p></div></div>
+ <div class="grid2">
+  <article class="expression"><div class="emoji">🎂</div><h3>Situation A: Birthday Party</h3><p>Buat dialog saat mengundang teman ke pesta ulang tahun.</p><p class="meaning">Gunakan: <b>Would you like to ...?</b> dan <b>Yes, I'd love to!</b></p></article>
+  <article class="expression"><div class="emoji">🏸</div><h3>Situation B: Playing Badminton</h3><p>Ajak teman bermain bulu tangkis. Temanmu boleh menerima atau menolak.</p><p class="meaning">Gunakan: <b>Let's ...!</b> atau <b>Sorry, I can't.</b></p></article>
+ </div>
+ <div class="card" style="margin-top:15px;background:#fffbeb;border-color:#fde68a"><b>✍️ Your task — Tugasmu</b><p>Tulislah dialog 6–8 baris dalam Bahasa Inggris, lalu tuliskan terjemahan Bahasa Indonesianya. Praktikkan dialog bersama pasangan di depan kelas.</p></div>
+</section>
+<footer class="footer"><div style="font-size:2rem">🌟 📚 ✨</div><strong>English Adventure — Grade VII</strong><br>Learn English, make friends, and have fun!<br><span>Belajar Bahasa Inggris dengan menyenangkan.</span></footer>
+</main>
+<script>
+const quizData=[
+ {q:"Apa arti dari “Inviting someone”?",o:["Meminta maaf kepada seseorang","Mengundang atau mengajak seseorang","Mengucapkan selamat tinggal","Memperkenalkan diri"],a:1,why:"Inviting someone berarti mengundang atau mengajak seseorang melakukan kegiatan atau menghadiri acara."},
+ {q:"Which expression is a polite invitation? (Ungkapan undangan yang sopan)",o:["Would you like to come?","I can't come.","Thank you very much.","I'm very busy."],a:0,why:"Would you like to come? digunakan untuk mengundang seseorang dengan sopan."},
+ {q:"Temanmu mengundangmu dan kamu ingin datang. Apa jawaban yang tepat?",o:["Sorry, I can't.","Maybe next time.","Yes, I'd love to!","I have to study."],a:2,why:"Yes, I'd love to! berarti Ya, aku mau sekali!"},
+ {q:"Apa arti “Sorry, I can't”?",o:["Ya, tentu saja.","Maaf, aku tidak bisa.","Aku senang sekali.","Ayo kita pergi."],a:1,why:"Sorry, I can't berarti Maaf, aku tidak bisa."},
+ {q:"Lengkapi kalimat: “Would you like to _____ a movie?”",o:["watching","watches","watch","watched"],a:2,why:"Setelah would like to, gunakan Verb 1: watch."},
+ {q:"Pilih kalimat yang benar setelah “How about ...”",o:["How about watch a movie?","How about watching a movie?","How about to watch a movie?","How about watched a movie?"],a:1,why:"Setelah How about, gunakan kata kerja -ing: watching."},
+ {q:"Apa arti “Let's study together!”?",o:["Ayo belajar bersama!","Aku tidak mau belajar.","Aku sedang tidur.","Maukah kamu datang?"],a:0,why:"Let's + Verb 1 digunakan untuk mengajak melakukan kegiatan bersama."},
+ {q:"Kamu sibuk dan tidak bisa menerima undangan. Jawaban sopan yang tepat adalah ...",o:["No! Go away.","I don't care.","Sorry, I can't. I'm busy.","Never invite me."],a:2,why:"Sorry, I can't. I'm busy berarti Maaf, aku tidak bisa. Aku sibuk."},
+ {q:"Apa arti “Thank you for inviting me”?",o:["Terima kasih sudah mengundangku.","Maaf aku terlambat.","Ayo pergi bersama.","Aku harus belajar."],a:0,why:"Thank you for inviting me digunakan untuk berterima kasih karena sudah diundang."},
+ {q:"Which sentence uses Verb 1 correctly? (Kalimat mana yang menggunakan Verb 1 dengan benar?)",o:["Let's playing badminton!","Do you want to studying?","Would you like to going?","Let's play badminton!"],a:3,why:"Setelah Let's, gunakan Verb 1: Let's play badminton!"}
+];
+let current=0,answers=Array(quizData.length).fill(null),locked=false;
+function renderQuestion(){
+ const d=quizData[current];locked=answers[current]!==null;
+ document.getElementById('qNumber').textContent=`QUESTION ${current+1} OF ${quizData.length}`;
+ document.getElementById('questionText').textContent=d.q;
+ document.getElementById('options').innerHTML=d.o.map((x,i)=>`<button class="option ${answers[current]===i?'selected':''}" onclick="chooseAnswer(${i})" ${locked?'disabled':''}><span class="letter">${String.fromCharCode(65+i)}</span><span>${x}</span></button>`).join('');
+ const fb=document.getElementById('feedback');fb.className='feedback';fb.textContent='';
+ if(locked){document.querySelectorAll('.option').forEach((el,i)=>{if(i===d.a)el.classList.add('right');else if(i===answers[current])el.classList.add('incorrect')});fb.classList.add('show',answers[current]===d.a?'good':'bad');fb.innerHTML=(answers[current]===d.a?'✅ <b>Benar!</b> ':'💡 <b>Belum tepat.</b> ')+d.why;}
+ document.getElementById('nextBtn').disabled=!locked;
+ document.getElementById('nextBtn').textContent=current===quizData.length-1?'Lihat Hasil 🏆':'Berikutnya →';
+ updateProgress();
+}
+function chooseAnswer(i){if(answers[current]!==null)return;answers[current]=i;renderQuestion()}
+function updateProgress(){const done=answers.filter(x=>x!==null).length;document.getElementById('progressText').textContent=`${done} / ${quizData.length}`;document.getElementById('progressBar').style.width=(done/quizData.length*100)+'%'}
+function nextQuestion(){if(answers[current]===null)return;if(current<quizData.length-1){current++;renderQuestion()}else showResult()}
+function showResult(){document.getElementById('quizContent').style.display='none';const r=document.getElementById('result');r.classList.add('show');const score=answers.reduce((s,a,i)=>s+(a===quizData[i].a?10:0),0);document.getElementById('finalScore').textContent=score+'/100';document.getElementById('resultEmoji').textContent=score>=80?'🏆':score>=60?'🌟':'💪';document.getElementById('resultTitle').textContent=score>=80?'Amazing! Luar biasa!':score>=60?'Good job! Kerja bagus!':'Keep practicing! Tetap semangat!';document.getElementById('resultMessage').textContent=score>=80?'Kamu sudah memahami materi dengan sangat baik!':score>=60?'Bagus! Baca kembali materi grammar dan coba lagi.':'Jangan menyerah. Pelajari kembali materi, lalu ulangi kuis.'}
+function restartQuiz(){current=0;answers=Array(quizData.length).fill(null);document.getElementById('quizContent').style.display='block';document.getElementById('result').classList.remove('show');renderQuestion()}
+renderQuestion();
+</script>
+</body>
+</html>
